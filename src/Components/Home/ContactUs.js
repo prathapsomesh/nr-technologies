@@ -18,7 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import emailjs from 'emailjs-com';
 import ErrorOrSuccessModal from '../shared/ErrorOrSuccessModal';
 
-const ContactUs = (ref) => {
+const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
@@ -97,7 +97,7 @@ const ContactUs = (ref) => {
   };
   return (
     <>
-      <div className="mt-4" ref={ref}>
+      <div className="mt-4" id="contact">
         <Container fluid className="p-4 whiteBackground">
           <h2 className=" pt-4 orange ">CONTACT US</h2>
 

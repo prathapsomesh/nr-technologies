@@ -7,6 +7,7 @@ export const labels = {
       quality: 'QUALITY',
       contact: 'CONTACT',
       login: 'LOGIN',
+      about: 'ABOUT',
     },
   },
   LOGIN_WITH_EMAIL: {

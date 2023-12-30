@@ -34,8 +34,8 @@ const NavbarTop = () => {
               <Link href="/products" className="links">
                 {labels.navbar.links.products}
               </Link>
-              <Link href="/vision" className="links">
-                {labels.navbar.links.vision}
+              <Link href="/about" className="links">
+                {labels.navbar.links.about}
               </Link>
               <Link href="/quality" className="links">
                 {labels.navbar.links.quality}
@@ -43,9 +43,9 @@ const NavbarTop = () => {
               <Link href="/contact" className="links">
                 {labels.navbar.links.contact}
               </Link>
-              <Link href="/login" className="links">
+              {/* <Link href="/login" className="links">
                 {labels.navbar.links.login}
-              </Link>
+              </Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

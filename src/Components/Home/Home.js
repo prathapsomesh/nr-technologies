@@ -5,6 +5,7 @@ import Aboutus from './Aboutus';
 import Quality from './Quality';
 import MadeInIndia from './MadeInIndia';
 import ContactUs from './ContactUs';
+import Bottom from './Bottom';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Quality />
       <MadeInIndia />
       <ContactUs />
+      <Bottom />
     </>
   );
 };
