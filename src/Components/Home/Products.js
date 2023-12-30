@@ -1,26 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Button,
-  Card,
-  Carousel,
-  Col,
-  Container,
-  Row,
-  Table,
-} from 'react-bootstrap';
-// import elePcb from '/static/electronicpcb.jpg';
-import LavishPrd from './nrt.png';
-import SumoPrd from './nrt.png';
-import GloryPrd from './nrt.png';
-import UltaChotaPrd from './nrt.png';
-// import NavBarShared from '../shared/NavBarShared';
-
-import Lavish from './nrt.png';
-import Sumo from './nrt.png';
-import Glory from './nrt.png';
-import Mill from './nrt.png';
-import Ultachota from './nrt.png';
-import Kagold from './nrt.png';
+import { Button, Card, Carousel, Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -30,9 +9,16 @@ const Products = () => {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
+  const handleClickScroll = (item) => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
-      <Container className="mt-5">
+      <Container className="mt-5" id="products">
         <Card className="my-4">
           <Card.Header>
             <h3 className="orange">PRODUCTS</h3>
@@ -91,9 +77,9 @@ const Products = () => {
                   Circuit board testing, Rapid prototypes, ROHS Complaint IC
                   Programming.
                 </p>
-                <Link href={'/contactus'}>
-                  <Button variant="outline-dark">Enquire now</Button>
-                </Link>
+                <Button variant="outline-dark" onClick={handleClickScroll}>
+                  Enquire now
+                </Button>
               </Col>
             </Row>
           </Card.Body>

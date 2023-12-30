@@ -4,7 +4,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const Quality = () => {
   return (
-    <Container className="mt-3">
+    <Container className="mt-3" id="quality">
       <Card className="my-4">
         <Card.Header>
           <h3 className="orange">QUALITY</h3>

@@ -5,6 +5,12 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const NavbarTop = () => {
+  const handleClickScroll = (item) => {
+    const element = document.getElementById(item);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <Navbar
@@ -31,18 +37,46 @@ const NavbarTop = () => {
             className="justify-content-end"
           >
             <Nav className="ml-auto">
-              <Link href="/products" className="links">
-                {labels.navbar.links.products}
-              </Link>
-              <Link href="/about" className="links">
-                {labels.navbar.links.about}
-              </Link>
-              <Link href="/quality" className="links">
-                {labels.navbar.links.quality}
-              </Link>
-              <Link href="/contact" className="links">
-                {labels.navbar.links.contact}
-              </Link>
+              <Nav.Item>
+                <Nav.Link
+                  className="links"
+                  onClick={() => {
+                    handleClickScroll('products');
+                  }}
+                >
+                  {labels.navbar.links.products}
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  className="links"
+                  onClick={() => {
+                    handleClickScroll('about');
+                  }}
+                >
+                  {labels.navbar.links.about}
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  className="links"
+                  onClick={() => {
+                    handleClickScroll('quality');
+                  }}
+                >
+                  {labels.navbar.links.quality}
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  onClick={() => {
+                    handleClickScroll('contact');
+                  }}
+                  className="links"
+                >
+                  {labels.navbar.links.contact}
+                </Nav.Link>
+              </Nav.Item>
               {/* <Link href="/login" className="links">
                 {labels.navbar.links.login}
               </Link> */}

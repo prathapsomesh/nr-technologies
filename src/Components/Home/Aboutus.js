@@ -4,7 +4,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const Aboutus = () => {
   return (
-    <Container className="mt-3">
+    <Container className="mt-3" id="about">
       <Card className="my-4">
         <Card.Header>
           <h3 className="orange">ABOUT US</h3>
