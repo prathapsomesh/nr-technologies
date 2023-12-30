@@ -131,7 +131,7 @@ a:hover {
 /* mobile */
 @media (max-width: 700px) {
   .bannerHeight {
-    height: auto;
+    height: 250px;
   }
 }
 /* Tablet and Smaller Desktop */
