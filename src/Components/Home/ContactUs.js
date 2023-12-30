@@ -204,12 +204,19 @@ const ContactUs = () => {
             <Col md={4} className=" py-2 mt-2">
               <Card className="p-3">
                 <Row className="my-2">
-                  <Col sm={1} className="d-flex justify-content-center">
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                    }}
+                  >
                     <div
                       // className="contactUsSpan"
                       style={{
-                        width: '40px',
-                        height: '40px',
+                        width: '30px',
+                        height: '30px',
+                        marginRight: '12px',
                       }}
                     >
                       <FontAwesomeIcon
@@ -219,18 +226,23 @@ const ContactUs = () => {
                         className="contactIcons"
                       />
                     </div>
-                  </Col>
-                  <Col sm={11}>
-                    <h5 className="green">NEW RAJ TECHNOLGIES</h5>
-                  </Col>
+                    <h5 className="green">NEW RAJ TECHNOLOGIES</h5>
+                  </div>
                 </Row>
                 <Row className="my-2">
-                  <Col sm={1} className="d-flex justify-content-center">
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                    }}
+                  >
                     <div
                       // className="contactUsSpan"
                       style={{
-                        width: '40px',
-                        height: '40px',
+                        width: '30px',
+                        height: '30px',
+                        marginRight: '12px',
                       }}
                     >
                       <FontAwesomeIcon
@@ -240,18 +252,23 @@ const ContactUs = () => {
                         className="contactIcons"
                       />
                     </div>
-                  </Col>
-                  <Col sm={11}>
-                    <h5>+91 6366001337</h5>
-                  </Col>
+                    <h5 className="green">+91 6366001337</h5>
+                  </div>
                 </Row>
                 <Row className="my-2">
-                  <Col sm={1} className="d-flex justify-content-center">
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                    }}
+                  >
                     <div
                       // className="contactUsSpan"
                       style={{
-                        width: '40px',
-                        height: '40px',
+                        width: '30px',
+                        height: '30px',
+                        marginRight: '12px',
                       }}
                     >
                       <FontAwesomeIcon
@@ -261,10 +278,8 @@ const ContactUs = () => {
                         className="contactIcons"
                       />
                     </div>
-                  </Col>
-                  <Col sm={11}>
-                    <h5>info@newrajtech.in</h5>
-                  </Col>
+                    <h5 className="green">info@newrajtech.in</h5>
+                  </div>
                 </Row>
                 <Row>
                   <a
@@ -272,6 +287,7 @@ const ContactUs = () => {
                     target="_blank"
                     rel="noreferrer"
                     variant="outline-dark"
+                    className="mt-2"
                   >
                     <Button variant="outline-dark">Get Directions</Button>
                   </a>
