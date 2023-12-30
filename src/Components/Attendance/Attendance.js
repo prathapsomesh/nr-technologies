@@ -42,7 +42,7 @@ const Attendance = () => {
             </thead>
             <tbody>
               {empList.map((data) => (
-                <tr>
+                <tr key={data?.id}>
                   <td>{data?.id}</td>
                   <td colSpan={8}>{data?.name}</td>
                   <td>
