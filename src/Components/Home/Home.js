@@ -1,14 +1,20 @@
-import Image from 'next/image';
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
 import Banner from './Banner';
 import Products from './Products';
+import Aboutus from './Aboutus';
+import Quality from './Quality';
+import MadeInIndia from './MadeInIndia';
+import ContactUs from './ContactUs';
 
 const Home = () => {
   return (
     <>
       <Banner />
       <Products />
+      <Aboutus />
+      <Quality />
+      <MadeInIndia />
+      <ContactUs />
     </>
   );
 };

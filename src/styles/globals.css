@@ -114,6 +114,11 @@ a:hover {
 
 .orange {
   color: #f58633;
+  background-image: linear-gradient(#198753 0 0);
+  background-position: left bottom; /*Adjust the background-position to move the line*/
+  background-size: 8% 2px; /*Adjust the background size to control length and height*/
+  background-repeat: no-repeat;
+  padding-bottom: 10px; /* this can also control the position */
 }
 
 #custom-switch:hover {
@@ -141,4 +146,37 @@ a:hover {
   font: 'Nunito', sans-serif;
   font-weight: 300;
   font-size: large;
+}
+
+.flagSafron {
+  color: #fd9931;
+}
+.flagWhite {
+  color: #ffffff;
+}
+
+.flagGreen {
+  color: #148607;
+}
+
+.contactIcons {
+  color: #f58633;
+  align-self: center;
+}
+
+.contactUsSpan {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.green {
+  color: #198753;
+}
+
+.mdbody {
+  width: 30px;
+  height: 30px;
 }
