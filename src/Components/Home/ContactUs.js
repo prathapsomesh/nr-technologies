@@ -18,7 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import emailjs from 'emailjs-com';
 import ErrorOrSuccessModal from '../shared/ErrorOrSuccessModal';
 
-const ContactUs = React.forwardRef((props, ref) => {
+const ContactUs = (ref) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
@@ -129,7 +129,7 @@ const ContactUs = React.forwardRef((props, ref) => {
                           onChange={(e) => setEmail(e.target.value)}
                         />
                         <Form.Text className="text-muted">
-                          We'll never share your email with anyone else.
+                          We&#39;ll never share your email with anyone else.
                         </Form.Text>
                       </Form.Group>
                     </Col>
@@ -283,6 +283,6 @@ const ContactUs = React.forwardRef((props, ref) => {
       </div>
     </>
   );
-});
+};
 
 export default ContactUs;

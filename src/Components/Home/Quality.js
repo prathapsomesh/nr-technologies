@@ -25,14 +25,14 @@ const Quality = () => {
               />
             </Col>
             <Col md={6} className="mt-2 ">
-              <p className="products ">
+              <p className="products">
                 Quality of our services is integrated with quality of human
                 resources. At SST, we firmly believe that the quality of its
                 human resources delivers the qualit of products. We consciously
                 and continuously put in efforts to train our human resource to
                 achieve higher levels of performance and to acquire higher
                 grades of technical skills. Employees are motivated through
-                "Appreciation Certificates" distributed by MD. Machine
+                Appreciation Certificates distributed by MD. Machine
                 maintenance, offices standardization, line markings, and other
                 58 initiatives are undertaken line- wise and champions are
                 allocated.
