@@ -7,7 +7,7 @@ const MadeInIndia = () => {
     <Container fluid className="mt-4" style={{ backgroundColor: ' #919191' }}>
       <Row>
         <Col
-          md={3}
+          md={2}
           style={{
             alignItems: 'center',
             display: 'flex',
@@ -27,7 +27,7 @@ const MadeInIndia = () => {
           />
         </Col>
         <Col
-          md={3}
+          md={2}
           style={{
             alignItems: 'center',
             display: 'flex',
@@ -49,7 +49,7 @@ const MadeInIndia = () => {
           />
         </Col>
         <Col
-          md={3}
+          md={2}
           style={{
             alignItems: 'center',
             display: 'flex',
@@ -70,7 +70,28 @@ const MadeInIndia = () => {
             height={10}
           />
         </Col>
-
+  <Col
+          md={2}
+          style={{
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Image
+            className="mx-auto d-block rounded m-5"
+            src={'/static/mqa.png'}
+            sizes="100vw"
+            style={{
+              width: '80%',
+              height: 'auto',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+            width={10}
+            height={10}
+          />
+        </Col>
         <Col
           md={3}
           style={{
